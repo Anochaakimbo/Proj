@@ -4,10 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController2;
 use App\Http\Controllers\facultyController;
 use App\Http\Controllers\companyController;
+use App\Http\Controllers\studentController;
+
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('student',[studentController::class,"index"])->name('student');
+Route::post('student/insert',[studentController::class,"insert"]);
 Route::get('movie',[MovieController2::class,"index"]);
 Route::get('faculty',[facultyController::class,"index"]);
 Route::get('company',[companyController::class,"index"]);
@@ -20,3 +23,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+

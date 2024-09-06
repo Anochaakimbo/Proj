@@ -1,0 +1,70 @@
+.wepnav{
+    background-color: black;
+    font-size: large;
+    text-align: center;
+    list-style-type: none;
+    height: 50px;
+    align-content: center;
+    
+}
+.form{
+    container: 15px;
+    background-color: #f1f1f1;
+    width: fit-content;
+    
+}
+.form input[type=text] {
+    border: 2px solid rgb(63, 63, 63);
+    border-radius: 4px;
+  }
+.form input[type=number] {
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 4px;
+}
+.form input[type=submit] {
+    border: 2px solid rgb(43, 75, 255);
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+
+}
+select {
+    width: 100%;
+    padding: 7px 7px;
+    border: 2px black ;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+.table{
+    width:100%;
+	border:1px solid black;
+}
+.table td{
+    text-align: center;
+}
+.wepnav li{
+    display: inline;
+    text-align: center;
+    word-spacing: 15px;
+
+}
+.wepnav a{
+    color: aliceblue;
+    font-family:sans-serif;
+    text-decoration: none;
+}
+.form input p{
+    color: #f1f1f1;
+}
+table{
+    border-collapse:collapse ;
+
+}
+table tr,th,td{
+    border: 1px solid gray;
+
+}
+tr:nth-child(even){
+    background-color: #f1f1f1;
+    
+}
