@@ -24,4 +24,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-
+Route::get('student/delete/{std_id}',[studentController::class,"delete"])->name('deletestd');

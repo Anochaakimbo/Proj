@@ -8,7 +8,7 @@ class studentController extends Controller
 {
     public function index(){
         $stc = student::count();
-        $st = DB::select("SELECT * FROM students");
+        $st = student::all();
         return view("student", compact("st","stc"));
     
 }
@@ -24,5 +24,12 @@ class studentController extends Controller
         $new_student->save();
         return redirect()->back();
 }
+    public function delete($std_id){
+        $deletestd = student::find($std_id);
+        $deletestd->delete();
+        return redirect()->back();
+}
+
 
 }
+

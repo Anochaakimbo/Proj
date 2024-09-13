@@ -42,7 +42,24 @@
     <td>{{$sts->stu_name}}</td>
     <td>{{$sts->age}}</td>
     <td>{{$sts->grade}}</td>
+    <td>
+  <a href="#" onclick="return ConfirmDelete({{$sts->id}})">
+    <input class='deletebutton' type="button" value="Delete"/>
+  </a>
+</td>
 </tr>
+
+
+
 @endforeach
+<script>
+function ConfirmDelete(StudentID) {
+  if (confirm("Are you sure you want to delete?")) {
+    window.location.href = `/student/delete/${StudentID}`;
+    return false;
+  }
+  return false;
+}
+</script>
 </body>
 </html>

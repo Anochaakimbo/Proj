@@ -3,9 +3,11 @@
     font-size: large;
     text-align: center;
     list-style-type: none;
-    height: 50px;
     align-content: center;
-    
+
+}
+body{
+    background-color: whitesmoke;
 }
 .form{
     container: 15px;
@@ -24,7 +26,7 @@
 .form input[type=submit] {
     border: 2px solid rgb(43, 75, 255);
     border-radius: 4px;
-    background-color: blue;
+    background-color: #4CAF50;
     color: white;
 
 }
@@ -38,6 +40,7 @@ select {
 .table{
     width:100%;
 	border:1px solid black;
+    border-collapse:collapse ;
 }
 .table td{
     text-align: center;
@@ -46,6 +49,9 @@ select {
     display: inline;
     text-align: center;
     word-spacing: 15px;
+    padding: 1%;
+    background-color: #333;
+    
 
 }
 .wepnav a{
@@ -56,15 +62,30 @@ select {
 .form input p{
     color: #f1f1f1;
 }
-table{
+th{
     border-collapse:collapse ;
+    background-color: #333;
+    color: #f1f1f1;
 
 }
 table tr,th,td{
     border: 1px solid gray;
+    padding: 2%;
 
 }
 tr:nth-child(even){
     background-color: #f1f1f1;
     
+}
+
+.deletebutton{
+    background-color: red;
+    color:#f1f1f1;
+    border-radius: 25px;
+    padding: 2%;
+
+}
+
+.wepnav li:hover{
+    background-color: #555;
 }
