@@ -25,3 +25,8 @@ Route::middleware([
 });
 
 Route::get('student/delete/{std_id}',[studentController::class,"delete"])->name('deletestd');
+
+
+Route::post('student/updated',[studentController::class,"updatedStudent"])->name('updatestd');
+
+Route::get('student/updated/{std_id}',[studentController::class,"index"])->name('updatestdurl');

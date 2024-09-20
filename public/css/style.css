@@ -13,23 +13,11 @@ body{
     container: 15px;
     background-color: #f1f1f1;
     width: fit-content;
-    
-}
-.form input[type=text] {
-    border: 2px solid rgb(63, 63, 63);
-    border-radius: 4px;
-  }
-.form input[type=number] {
-    border: 2px solid rgb(65, 65, 65);
-    border-radius: 4px;
-}
-.form input[type=submit] {
-    border: 2px solid rgb(43, 75, 255);
-    border-radius: 4px;
-    background-color: #4CAF50;
-    color: white;
 
 }
+
+
+
 select {
     width: 100%;
     padding: 7px 7px;
@@ -51,7 +39,7 @@ select {
     word-spacing: 15px;
     padding: 1%;
     background-color: #333;
-    
+
 
 }
 .wepnav a{
@@ -75,7 +63,7 @@ table tr,th,td{
 }
 tr:nth-child(even){
     background-color: #f1f1f1;
-    
+
 }
 
 .deletebutton{
@@ -88,4 +76,18 @@ tr:nth-child(even){
 
 .wepnav li:hover{
     background-color: #555;
+}
+
+.updatebutton{
+    background-color: yellow;
+    color: white;
+    border-radius: 25px;
+    padding: 2%;
+}
+.upd{
+    background-color: yellow;
+}
+
+.ax{
+    background-color: blue;
 }
