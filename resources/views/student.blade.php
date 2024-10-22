@@ -8,14 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-{{-- php
-    $okok = $find;
-?>
-
-@if($okok == NULL)
-    OKOK
-@else --}}
-
 @if($find)
 <body>
     <nav class = "wepnav">
@@ -45,9 +37,6 @@
         <button class ="btn btn-primary" type="button">Back to Insert Student</button>
     </a>
     </form>
-
-
-
 @else
 <body>
     <nav class = "wepnav">
@@ -81,8 +70,8 @@
       <th>AGE</th>
       <th>GRADE</th>
     </tr>
-    @foreach($st as $sts)
-<tr>
+@foreach($st as $sts)
+    <tr>
     <td>{{$sts->id}}</td>
     <td>{{$sts->stu_name}}</td>
     <td>{{$sts->age}}</td>
@@ -95,8 +84,9 @@
   <a href="#" onclick="return ConfirmDelete({{$sts->id}})">
     <input class='deletebutton' type="button" value="Delete"/>
   </a>
-</td>
-</tr>
+    </td>
+
+    </tr>
 
 @endforeach
 

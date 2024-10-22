@@ -10,10 +10,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('student',[studentController::class,"index"])->name('student');
+
 Route::post('student/insert',[studentController::class,"insert"]);
+
 Route::get('movie',[MovieController2::class,"index"]);
+
 Route::get('faculty',[facultyController::class,"index"]);
+
 Route::get('company',[companyController::class,"index"]);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

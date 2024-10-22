@@ -16,27 +16,21 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($users as $user)
-            @foreach ($user->companies as $company)
+            @foreach ($companies as $company)
             <tr>
                 <td>{{ $company->company_name }}</td>
                 <td>{{ $company->company_price }}</td>
                 <td>
-                    <?php
-                        $price = $user->companies->first()->company_price;
-                        if ($price >= 10000000) {
-                            $size = "ขนาดใหญ่";
-                        } elseif ($price >= 5000000) {
-                            $size = "ขนาดกลาง";
-                        } else {
-                            $size = "ขนาดเล็ก";
-                        }
-                        echo $size;
-                    ?>
+                    @if($company->company_price >= 10000000)
+                        ขนาดใหญ่
+                    @elseif($company->company_price >= 5000000)
+                        ขนาดกลาง
+                    @else
+                        ขนาดเล็ก
+                    @endif
                 </td>
-                <td>{{ $user->name }}</td>
+                <td>{{ $company->users->name }}</td>
             </tr>
-            @endforeach
             @endforeach
         </tbody>
     </table>

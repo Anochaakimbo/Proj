@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>ListOffaculty</h1>
+<h1>List Of faculty</h1>
 <table border="1">
     <tr>
       <th>ID</th>

@@ -7,10 +7,9 @@ use App\Models\User;
 
 class companyController extends Controller
 {
-    public function index(){
-        $users = User::all();
-        $companies = companies::all();
-        return view("company",compact('users','companies'));
-
+    public function index()
+    {
+        $companies = Companies::with('users')->get();
+        return view("company", compact('companies'));
     }
 }
